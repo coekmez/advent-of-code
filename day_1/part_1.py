@@ -1,4 +1,4 @@
-with open('puzzle_1/input.txt', 'r') as f:
+with open('day_1/input.txt', 'r') as f:
     input = f.read().splitlines()
 
 nums = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}
