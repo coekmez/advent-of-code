@@ -9,7 +9,7 @@ for line in input:
     # find first number
     cursor = 1
     first_digit_found = False
-    while(not first_digit_found):
+    while not first_digit_found:
         temp = line[:cursor]
         if temp[-1] in nums:
             first_digit = nums.index(temp[-1])
@@ -23,7 +23,7 @@ for line in input:
     # find last number
     cursor = -1
     last_digit_found = False
-    while(not last_digit_found):
+    while not last_digit_found:
         temp = line[cursor:]
         if temp[0] in nums:
             last_digit = nums.index(temp[0])

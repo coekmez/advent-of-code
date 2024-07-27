@@ -1,13 +1,13 @@
 with open('day_2/input.txt', 'r') as f:
-    input = f.read().splitlines()
+    val = f.read().splitlines()
 
 limits = {'red': 12, 'green': 13, 'blue': 14}
 games = dict()
-sum = 0
+total = 0
 
-for line in input:
+for line in val:
     faulty = False
-    id = int(line.split(':')[0].split(' ')[-1])
+    val_id = int(line.split(':')[0].split(' ')[-1])
     subsets = line.split(':')[-1].split(';')
     for subset in subsets:
         subset_dict = dict()
@@ -22,6 +22,6 @@ for line in input:
     if faulty:
         continue
     else:
-        sum += id
+        total += val_id
 
-print(sum)
+print(total)
