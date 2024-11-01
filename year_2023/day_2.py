@@ -42,3 +42,7 @@ def part_2(data):
         total += limits['red'] * limits['blue'] * limits['green']
 
     return total
+
+def solve(data):
+    print(f"Part_1: {part_1(data)}")
+    print(f"Part_2: {part_2(data)}")
