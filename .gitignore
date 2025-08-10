@@ -208,6 +208,8 @@ __marimo__/
 
 # Advent of Code specific, ignore any and all datasets
 **/dataset
+**/examples
+**/*.txt
 
 # MacOS is being annoying
 **/.DS_STORE
