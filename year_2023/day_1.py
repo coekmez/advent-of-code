@@ -1,5 +1,5 @@
 def part_1(data):
-    nums = {'0', '1', '2', '3', '4', '5', '6', '7', '8', '9'}
+    nums = {"0", "1", "2", "3", "4", "5", "6", "7", "8", "9"}
     total = 0
     for s in data:
         number = []
@@ -11,9 +11,21 @@ def part_1(data):
             total += number
     return total
 
+
 def part_2(data):
-    nums = ['0', '1', '2', '3', '4', '5', '6', '7', '8', '9']
-    stringy_nums = ['zero', 'one', 'two', 'three', 'four', 'five', 'six', 'seven', 'eight', 'nine']
+    nums = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
+    stringy_nums = [
+        "zero",
+        "one",
+        "two",
+        "three",
+        "four",
+        "five",
+        "six",
+        "seven",
+        "eight",
+        "nine",
+    ]
 
     first_digit, last_digit = 0, 0
 
@@ -50,6 +62,7 @@ def part_2(data):
         total += 10 * first_digit + last_digit
 
     return total
+
 
 def solve(data):
     print(f"Part_1: {part_1(data)}")
