@@ -15,7 +15,6 @@ def part_1(data):
 
 
 def part_2(data):
-    total = 0
     nb_of_cards = len(data) * [1]
     for i in range(len(data)):
         line = data[i]
