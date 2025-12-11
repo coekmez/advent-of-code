@@ -1,13 +1,12 @@
 import importlib
-import inspect
 import os
 
-YEARS = ["2023"]
+YEARS = ["2025"]
 
 if __name__ == "__main__":
     for year in YEARS:
         print(5 * "#", f"YEAR {year}", 5 * "#")
-        for i in range(1, 5):
+        for i in range(1, 3):
             # import the day module
             curr_day = importlib.import_module(f"year_{year}.day_{i}")
             # load data
