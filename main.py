@@ -15,9 +15,12 @@ if __name__ == "__main__":
                 root_path = f"year_{year}/dataset"
                 with open(os.path.join(root_path, f"day_{i}.txt"), "r") as f:
                     data = f.read().splitlines()
+                # solve
+                sol_1, sol_2 = curr_day.solve(data)
                 # display solution
                 print(f"Results for Day {i}")
-                curr_day.solve(data)
+                print(f"Part 1: {sol_1}")
+                print(f"Part 2: {sol_2}")
             except (ModuleNotFoundError, FileNotFoundError):
                 print(f"Day {i} data file not found.\n")
                 break

@@ -101,5 +101,4 @@ def check_line(row, column, data, slot_is_in_the_total):
 
 
 def solve(data):
-    print(f"Part_1: {part_1(data)}")
-    print(f"Part_2: {part_2(data)}")
+    return part_1(data), part_2(data)
