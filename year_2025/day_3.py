@@ -16,7 +16,21 @@ def part_1(data):
 
 
 def part_2(data):
-    num = []
+    sum = 0
+    for line in data:
+        num = []
+        left_index = 0
+        right_index = len(line) - 11
+        while len(num) < 12:
+            max_num = max(line[left_index:right_index])
+            num.append(max_num)
+            left_index += line[left_index:right_index].index(max_num) + 1
+            right_index += 1
+
+        jolts = int("".join(num))
+        sum += jolts
+
+    return sum
 
 
 def solve(data):
