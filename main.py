@@ -21,9 +21,9 @@ if __name__ == "__main__":
             with open(os.path.join(root_path, f"day_{i}.txt"), "r") as f:
                 data = f.read().splitlines()
             # solve
+            print(f"Results for Day {i}")
             sol_1, sol_2 = curr_day.solve(data)
             # display solution
-            print(f"Results for Day {i}")
             print(f"Part 1: {sol_1}")
             print(f"Part 2: {sol_2}")
         except (ModuleNotFoundError, FileNotFoundError):
